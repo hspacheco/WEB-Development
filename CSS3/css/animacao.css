@@ -1,0 +1,52 @@
+@keyframes animacao-box{
+	from {
+		background-color: #339966; 
+		border-radius: 0px;
+		top: 0px;
+		left: 0px;
+	}
+	to {
+		background-color: red; 
+		border-radius: 300px;
+		left: 200px;
+	}
+}
+
+#box-animacao{
+	width: 300px;
+	height: 300px;
+	background-color: #339966;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 4px 4px 20px 8px black;
+	position: relative;
+
+	/*animation-name: animacao-box;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-iteration-count: 10;
+	animation-direction: alternate;*/
+
+	animation: animacao-box 1s 1s 10 alternate;
+}
+
+#box-transicao{
+	width: 300px;
+	height: 300px;
+	background: blue;
+}
+
+
+#box-transicao:hover {
+	width: 300px;
+	height: 300px;
+	background: black;
+	transition: all 2s;
+}
+
+#box-animacao h1{
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 10px 5px 20px black; /*Direita/Esquerda | Cima/Baixo | blur*/
+}
+

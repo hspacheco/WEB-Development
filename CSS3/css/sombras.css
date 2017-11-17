@@ -1,0 +1,15 @@
+#box{
+	width: 300px;
+	height: 300px;
+	background-color: #339966;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 4px 4px 20px 8px black;
+}
+
+#box h1{
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 10px 5px 20px black; /*Direita/Esquerda | Cima/Baixo | blur*/
+}
+
