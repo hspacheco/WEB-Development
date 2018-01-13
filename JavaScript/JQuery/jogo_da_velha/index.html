@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="velhinha.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="inicio-jogo" align="center">
+			<table border="1">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">Jogo da Idosa</td>
+					</tr>
+
+					<tr>
+						<td>
+							<img src="imagens/jogador_1.png">
+							<br>
+							<input id="entrada-nick1" type="text" maxlength="15" placeholder="Nick player1">
+						</td>
+
+						<td>
+							<img id="btn-start" style="margin: 0px 15px" src="imagens/iniciar.png">
+						</td>
+
+						<td>
+							<img src="imagens/jogador_2.png">
+							<br>
+							<input id="entrada-nick2" type="text" maxlength="15" placeholder="Nick player2">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="corpo-jogo" align="center" style="margin-top: 20px; display: none;">
+
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_1.png">
+				<br>
+				<span id="nick1"></span>
+			</div>
+
+			<div style="display: inline-block;">
+
+				<table border="1">
+					<tr>
+						<td>
+							<div class="jogada" id="a-1" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="a-2" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="a-3" style="width: 100px; height: 100px"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="jogada" id="b-1" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="b-2" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="b-3" style="width: 100px; height: 100px"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="jogada" id="c-1" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="c-2" style="width: 100px; height: 100px"></div>
+						</td>
+						<td>
+							<div class="jogada" id="c-3" style="width: 100px; height: 100px"></div>
+						</td>
+					</tr>	
+				</table>
+
+			</div>
+
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png">
+				<br>
+				<span id="nick2"></span>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

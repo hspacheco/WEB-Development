@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>tabs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-barra">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">LOGO</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-barra">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-education"></span> Quem sou eu</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contato</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Por que me contratar ?</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-user"></span> Usuário<span class="caret"></span>
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Mensagens</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+    
+      <div class="page-header">
+        <h1>Tabs</h1>
+      </div>
+
+      <div>
+        <ul class="nav nav-pills" role="tablist">
+          <li class="active"><a href="#dado" role="tab" data-toggle="tab">Dados</a></li>
+          <li><a href="#clique" role="tab" data-toggle="tab">Clique</a></li>
+          <li><a href="#aqui" role="tab" data-toggle="tab">Aqui tb</a></li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active" role="tabpanel" id="dado">
+          <h3>Olá</h3>
+          <p>Beleza?</p>
+        </div>
+
+        <div class="tab-pane" role="tabpanel" id="clique">
+          <h3>Olá</h3>
+          <p>Tudo</p>
+        </div>
+
+        <div class="tab-pane" role="tabpanel" id="aqui">
+          <h3>Olá</h3>
+          <p>Bacana</p>
+        </div>
+      </div>
+
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
